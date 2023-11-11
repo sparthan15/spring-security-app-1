@@ -25,7 +25,6 @@ import java.util.Map;
 
 @Component
 @RequiredArgsConstructor
-@Order(SecurityProperties.BASIC_AUTH_ORDER - 10)
 public class JwtAuthorizationFilter extends OncePerRequestFilter  {
 
     private final JwtUtil jwtUtil;
