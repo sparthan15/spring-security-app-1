@@ -1,4 +1,4 @@
-package com.example.security.security;
+package com.example.security.config;
 
 import com.example.security.service.User;
 import io.jsonwebtoken.*;
@@ -57,7 +57,6 @@ public class JwtUtil {
     }
 
     public String resolveToken(HttpServletRequest request) {
-
         String bearerToken = request.getHeader(TOKEN_HEADER);
         if (bearerToken != null && bearerToken.startsWith(TOKEN_PREFIX)) {
             return bearerToken.substring(TOKEN_PREFIX.length());

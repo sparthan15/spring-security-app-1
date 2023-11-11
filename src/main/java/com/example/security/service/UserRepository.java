@@ -6,10 +6,10 @@ import org.springframework.stereotype.Repository;
 public class UserRepository {
 
     public User findUserByEmail(String email){
+        //whatever the email is ok, but the password must be 123456..
         User user = new User(email, "123456");
-        user.setFirstName("Gamboa");
-        user.setLastName("Charlie");
+        user.setFirstName("Carlos");
+        user.setLastName("Gamboa");
         return user;
-
     }
 }
