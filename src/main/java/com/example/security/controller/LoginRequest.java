@@ -1,4 +1,4 @@
-package com.example.security;
+package com.example.security.controller;
 
 public class LoginRequest {
     private String email;
@@ -7,6 +7,10 @@ public class LoginRequest {
     public LoginRequest(String email, String password) {
         this.email = email;
         this.password = password;
+    }
+
+    public static LoginRequest create(String email, String password) {
+        return new LoginRequest(email, password);
     }
 
     public String getEmail() {

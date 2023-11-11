@@ -1,13 +1,16 @@
-package com.example.security;
+package com.example.security.security;
 
+import com.example.security.service.User;
 import io.jsonwebtoken.*;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+@Component
 public class JwtUtil {
 
     private final String secret_key = "mysecretkey";

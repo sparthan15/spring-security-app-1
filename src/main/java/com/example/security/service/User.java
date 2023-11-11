@@ -1,4 +1,4 @@
-package com.example.security;
+package com.example.security.service;
 
 public class User {
     private String email;

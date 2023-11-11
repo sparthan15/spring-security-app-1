@@ -1,4 +1,4 @@
-package com.example.security;
+package com.example.security.controller;
 
 public class LoginResponse {
     private String email;

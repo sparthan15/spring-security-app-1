@@ -1,9 +1,7 @@
 package com.example.security.controller;
 
-import com.example.security.JwtUtil;
-import com.example.security.LoginRequest;
-import com.example.security.LoginResponse;
-import com.example.security.User;
+import com.example.security.security.JwtUtil;
+import com.example.security.service.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -20,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     private final AuthenticationManager authenticationManager;
-    private JwtUtil jwtUtil;
+    private final  JwtUtil jwtUtil;
 
 
     @PostMapping("/login")
